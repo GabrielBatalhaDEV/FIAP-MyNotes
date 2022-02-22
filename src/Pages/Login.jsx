@@ -19,7 +19,7 @@ function Login() {
           <Typewriter
             loop
             cursor
-            cursorStyle="_"
+            cursorStyle="|"
             typeSpeed={150}
             deleteSpeed={100}
             delaySpeed={1000}
