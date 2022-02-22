@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 import styles from "./login.module.css";
 
 function Login() {
@@ -13,7 +14,18 @@ function Login() {
   return (
     <>
       <main className={styles.main}>
-        <h1>My Notes</h1>
+        <h1>
+          My
+          <Typewriter
+            loop
+            cursor
+            cursorStyle="_"
+            typeSpeed={150}
+            deleteSpeed={100}
+            delaySpeed={1000}
+            words={["Notes"]}
+          />
+        </h1>
         <form>
           <input
             type="text"
