@@ -3,6 +3,19 @@ import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import styles from "./login.module.css";
 
+const loop = true;
+const cursor = true;
+
+const typewriterConfig = {
+  loop,
+  cursor,
+  cursorStyle: "|",
+  typeSpeed: 150,
+  deleteSpeed: 100,
+  delaySpeed: 1000,
+  words: ["Notes"],
+};
+
 function Login() {
   const nav = useNavigate();
 
@@ -16,15 +29,7 @@ function Login() {
       <main className={styles.main}>
         <h1>
           My
-          <Typewriter
-            loop
-            cursor
-            cursorStyle="|"
-            typeSpeed={150}
-            deleteSpeed={100}
-            delaySpeed={1000}
-            words={["Notes"]}
-          />
+          <Typewriter typewriterConfig />
         </h1>
         <form>
           <input
