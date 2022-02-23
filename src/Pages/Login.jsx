@@ -9,7 +9,7 @@ const cursor = true;
 const typewriterConfig = {
   loop,
   cursor,
-  cursorStyle: "|",
+  cursorStyle: "_",
   typeSpeed: 150,
   deleteSpeed: 100,
   delaySpeed: 1000,
@@ -22,7 +22,6 @@ function Login() {
   function handleUserHome() {
     console.log("nav");
     nav("home");
-    
   }
 
   return (
@@ -30,7 +29,7 @@ function Login() {
       <main className={styles.main}>
         <h1>
           My
-          <Typewriter typewriterConfig />
+          <Typewriter {...typewriterConfig} />
         </h1>
         <form>
           <input
