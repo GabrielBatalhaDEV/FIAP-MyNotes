@@ -22,6 +22,7 @@ function Login() {
   function handleUserHome() {
     console.log("nav");
     nav("home");
+    
   }
 
   return (
