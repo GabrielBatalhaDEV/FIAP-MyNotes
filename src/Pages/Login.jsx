@@ -14,7 +14,7 @@ const typewriterConfig = {
   deleteSpeed: 100,
   delaySpeed: 1000,
   words: ["Notes"],
-};
+}; 
 
 function Login() {
   const nav = useNavigate();
@@ -30,7 +30,7 @@ function Login() {
       <main className={styles.main}>
         <h1>
           My
-          <Typewriter typewriterConfig />
+          <Typewriter typewriterConfig={typewriterConfig} />
         </h1>
         <form>
           <input
